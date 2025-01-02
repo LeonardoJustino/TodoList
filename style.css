@@ -245,7 +245,228 @@ display: block;
 /*RESPONSIVIDADE*/
 
 
-/*
+
 @media(max-width: 450px){
+  header{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+    margin: 50px auto;
+    width: 205px;
+    
   
-}*/
+}
+header p{
+    font-size: 40px;
+    line-height: 32px;
+    font-family: 'Inter';
+    color: var(--bg-secondary);
+    font-weight: Bold;
+    line-height: 32px;
+}
+header img{
+    width: 70px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid var(--content-primary);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 480px;
+    width: 360px;
+   
+}
+form{
+    display: flex;
+    align-items: center;    
+    padding: 4px;
+    height: 70px;
+    
+   
+}
+form input{
+    width: 220px;
+    height:50px;
+    border-radius: 8px;
+    border: 2px solid var(--content-primary);
+    padding: 10px 10px 10px 20px;
+    color: var(--content-tertiary);
+    
+    font-size: 16px;
+    font-weight:200;
+   background-color: var(--bg-secondary);
+    
+}
+form input:hover{
+    width: 220px;
+    height:50px;
+    border-radius: 8px;
+    border: 2px solid var(--alert-color);
+    padding: 10px 10px 10px 20px;
+    color: var(--content-tertiary);
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight:200;
+   background-color: var(--background-primary);
+    
+}
+form input:focus{
+    width: 220px;
+    height:50px;
+    border-radius: 8px;
+    padding: 10px 10px 10px 20px;
+    color: var(--content-primary);
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight:200;
+    outline: none;
+    background-color: var(--bg-secondary);
+   border:3px solid var(--button-color);
+    
+}
+button{
+    
+    width: 90px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--alert-color);
+    border:none;
+    color: white;
+    font-size:10px;
+    cursor: pointer;
+    font-weight: Semibold;
+    border: 2px solid var(--content-primary);
+}
+
+
+.show-result{
+display: block;
+}
+
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 5px;
+   
+}
+  
+  li{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 70px;
+    
+    align-items: center;
+    padding: 4px;
+    
+    margin: 0px auto 20px;
+    list-style: none;
+    gap: 5px;
+    border-radius: 8px;
+    font-weight:Medium ;
+    font-family: 'Inter';
+    font-size: 14px;
+    
+    
+  }
+  
+  .inputCheck {
+    width: 40px;
+    border: 2px solid var(--content-primary);
+    border-radius: 8px;
+    appearance: none;
+    height: 45px;
+    
+    background-color: var(--bg-secondary);
+  }
+
+  .inputCheck:checked::after{
+    display: flex;
+    justify-content: center;
+    content:  url('img/check2.svg');
+    font-size: 30px;
+    align-items: center;
+    background-color: var(--alert-color);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    appearance: none;
+    width: 37px;
+   
+
+    border: 2px solid var(--content-primary);
+  }
+  .lixeiraStyle{
+    width: 40px;
+    border-radius: 8px;
+    background-color: var(--bg-secondary);
+
+    padding: 4px;
+    border: 2px solid var(--content-primary);
+    cursor: pointer;
+  }
+
+
+
+  .textStyle {
+    display: flex;
+    height:  45px;
+    border-radius: 8px;
+    background-color: var(--bg-secondary);
+    padding: 4px;
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--content-primary);
+  }
+
+
+
+
+.footer{
+    height: 40px;
+    width: 320px;
+    background-color: var(--alert-color);
+    border: 1px solid black;
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 12px;
+    align-items: center;
+    margin: 30px auto;
+    justify-content: space-between;
+   
+}
+
+.alertText{
+    display: flex;
+    margin: auto;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: Medium;
+    color: var(--background-primary);
+    justify-content: center;
+    
+}
+.iconX{
+    margin-right: 15px;
+    height: 20px;
+    
+}
+.alertIcon{
+    margin-left: 15px;
+    height: 20px;
+   
+}
+
+}
